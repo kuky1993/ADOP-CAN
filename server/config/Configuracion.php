@@ -1,2 +1,2 @@
 <?php
-define("ADOPTCAN","local");
+define("NOMBRE_CONEXION","local");

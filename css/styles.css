@@ -1,0 +1,28 @@
+
+  /* Remove the navbar's default margin-bottom and rounded borders */
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 100px;
+  }
+
+.faz{
+
+   background-image: url("C:\Users\Public\Pictures\Sample Pictures\ADOP-CAN\imgs\img1.jpg");
+}
+
+body {
+    background-image: url("imgs/img.jpg");
+}
+
+.nav{
+  .myNavbar{
+    background-image: url("imgs/img1.jpg");
+
+  }
+}
