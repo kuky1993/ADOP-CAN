@@ -1,13 +1,13 @@
 <style>
 body {
     font: 400 15px/1.8 Lato, sans-serif;
-    color: #777;
+    color: #FF5733  ;
 }
 h3, h4 {
     margin: 10px 0 30px 0;
     letter-spacing: 10px;
     font-size: 20px;
-    color: #111;
+    color: #BA4A00  ;
 }
 .container {
     padding: 80px 120px;
@@ -20,16 +20,15 @@ h3, h4 {
     opacity: 0.7;
 }
 .person:hover {
-    border-color: #f1f1f1;
+    border-color: #BA4A00  ;
 }
 .carousel-inner img {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%); /* make all photos black and white */
-    width: 100%; /* Set width to 100% */
+
+    width: 100%;
     margin: auto;
 }
 .carousel-caption h3 {
-    color: #fff !important;
+    color:#6E2C00   !important;
 }
 @media (max-width: 600px) {
   .carousel-caption {
@@ -86,13 +85,12 @@ h3, h4 {
 #googleMap {
     width: 100%;
     height: 400px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  
 }
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #2d2d30;
+    background-color: #6E2C00  ;
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
@@ -106,17 +104,17 @@ h3, h4 {
 }
 .navbar-nav li.active a {
     color: #fff !important;
-    background-color: #29292c !important;
+    background-color: #f5f5f5 !important;
 }
 .navbar-default .navbar-toggle {
     border-color: transparent;
 }
 .open .dropdown-toggle {
     color: #fff;
-    background-color: #555 !important;
+    background-color: #f5f5f5 !important;
 }
 .dropdown-menu li a {
-    color: #000 !important;
+    color: #6E2C00  s !important;
 }
 .dropdown-menu li a:hover {
     background-color: red !important;
@@ -130,7 +128,7 @@ footer a {
     color: #f5f5f5;
 }
 footer a:hover {
-    color: #777;
+    color: #f5f5f5;
     text-decoration: none;
 }
 .form-control {
@@ -138,20 +136,5 @@ footer a:hover {
 }
 textarea {
     resize: none;
-}
-</style>
-
-
-
-
-<style>
-.modal-header, h4, .close {
-    background-color: #5cb85c;
-    color:white !important;
-    text-align: center;
-    font-size: 30px;
-}
-.modal-footer {
-    background-color: #f9f9f9;
 }
 </style>
