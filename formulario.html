@@ -2,24 +2,12 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>t>
 <link rel="stylesheet" href="css/styles.css">
+<div class="modal-header dropdown">
+  <button type="button" class="close" data-dismiss="modal">×</button>
+  <h4><span class="glyphicon glyphicon-lock"></span>Nueva Mascota</h4>
+</div>
 
-
-<div class="container">
-  <div class="modal-body">
-    <form role="form">
-      <div class="dropdown">
-        <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Dropdown Example
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
-          <li role="presentation" class="divider"></li>
-          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
-        </ul>
-      </div>
-      <br>
-
+    <div class="container">
       <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Tipo Mascota
         <span class="caret"></span></button>
@@ -62,11 +50,11 @@
         <input type="text" class="form-control" id="usrname" placeholder="Ingresa la edad de la mascota">
       </div>
       <div class="form-group">
-        <label for="usrname"><span class="glyphicon glyphicon-dog"></span>Descripción</label>
+        <label for="usrname"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descripción</label>
         <input type="text" class="form-control" id="usrname" placeholder="Ingresa alguna descripcion de la mascota">
       </div>
       <div class="form-group">
-        <label for="usrname"><span class="glyphicon glyphicon-dog"></span>Imagen</label>
+        <label for="usrname"><span class="glyphicon glyphicon-picture"></span>&nbsp;Imagen</label>
         <input type="text" class="form-control" id="usrname" placeholder="Ingresa la imagen de la mascota">
       </div>
 
@@ -74,3 +62,4 @@
         </button>
     </form>
   </div>
+</div>
