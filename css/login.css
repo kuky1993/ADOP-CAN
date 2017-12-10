@@ -1,7 +1,11 @@
 .navbar {
     font-family: Montserrat, sans-serif;
     margin-bottom: 0;
-    background-color: #6E2C00  ;
+    background: #127471;
+  background: -webkit-linear-gradient(-90deg, #127471,#4f2081 );
+  background: -o-linear-gradient(-90deg, #127471,#4f2081);
+  background: -moz-linear-gradient(-90deg, #127471, #4f2081);
+  background: linear-gradient(-90deg, #127471,#4f2081);
     border: 0;
     font-size: 11px !important;
     letter-spacing: 4px;
@@ -9,7 +13,7 @@
 }
 
 .navbar li a, .navbar .navbar-brand {
-    color: #d5d5d5 !important;
+    color:white !important;
 }
 .navbar-nav li a:hover {
     color: #fff !important;
