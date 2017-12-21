@@ -7,6 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/login.css">
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -19,30 +20,56 @@
       </button>
       <a class="navbar-brand" href="#myPage">ADOPT-CAN</a>
     </div>
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">INICIO</a></li>
         <li><a href="band.html">ACERCA DE NOSOTROS</a></li>
         <li><a href="tour.html">ADOPCION</a></li>
         <li><a href="contact.html">CONTACTO</a></li>
-        <li><a href="login.html">LOGIN</a></li>
+        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</button></li>
 
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Merchandise</a></li>
-            <li><a href="#">Extras</a></li>
-            <li><a href="#">Media</a></li>
-          </ul>
-        </li>
+        <div id="id01" class="modal" class="container">
+
+          <form class="modal-content animate">
+
+            <div  class="container">
+              <label class="container"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit" text-align="center">Login</button>
+              <br>
+              <br>
+              <input type="checkbox" checked="checked">Recordar contraseña
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+
+
+        <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        </script>
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-
 
 <!-- Container (The Band Section) -->
 <div id="band" class="container text-center">
