@@ -6,7 +6,7 @@ $mail = new PHPMailer();
 
     $mail->isSMTP();
     $mail->Host = 'smtp1.example.com;smtp2.example.com';    // aqui no se si va el host de la pagina
-    $mail->Username = 'user@example.com';                 //con el usuario de la misma 
+    $mail->Username = 'user@example.com';                 //con el usuario de la misma
     $mail->Password = 'secret';
 
     $mail->SMTPAuth = true;
@@ -18,8 +18,8 @@ $mail = new PHPMailer();
     $mail->addAddress('Isalazar@yavirac.edu.ec');   // destinatario
 
 
-    $mail->Subject = ('inge no sale'); // asunto
-    $mail->Body    = ('este es un mensaje para el inge salazar'); // contenido
+    $mail->Subject = 'inge no sale'; // asunto
+    $mail->Body    = 'este es un mensaje para el inge salazar'; // contenido
 
     if($mail->send()= false){
       echo "no se pudo enviar email";
