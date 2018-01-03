@@ -5,13 +5,13 @@ require 'PHPMailer/autoload.php';
 $mail = new PHPMailer();
 
     $mail->isSMTP();
-    $mail->Host = 'smtp1.example.com;smtp2.example.com';    // aqui no se si va el host de la pagina
-    $mail->Username = 'user@example.com';                 //con el usuario de la misma
-    $mail->Password = 'secret';
+    $mail->Host = 'smtp.gmail.com';    // aqui no se si va el host de la pagina
+    $mail->Username = 'elias1993kuky@gmail.com';                 //con el usuario de la misma
+    $mail->Password = 'tanchulaytansexy1993';
 
     $mail->SMTPAuth = true;
     $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    $mail->Port = 465;
 
 
     $mail->setFrom('elias1993kuky@gmail.com');// remitente
