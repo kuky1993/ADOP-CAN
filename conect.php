@@ -1,4 +1,3 @@
-
 <?php
 $DB_host = "sql313.byethost32.com";
 $DB_user = "b32_21140711";

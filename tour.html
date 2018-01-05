@@ -44,25 +44,25 @@
     <div class="row text-center">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="imgs/per1.jpg" alt="Paris" width="400" height="300">
-          <p><strong>Paris</strong></p>
-          <p>Friday 27 November 2015</p>
+          <img src="imgs/per1.jpg" alt="Quito" width="400" height="300">
+          <p><strong>Quito</strong></p>
+          <p>Lunes, 01 de Enero 2018</p>
           <a class="btn" data-toggle="modal" data-target="#myModal" href="form.html">ADOPTAR</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="imgs/per2.jpg" alt="New York" width="400" height="300">
-          <p><strong>New York</strong></p>
-          <p>Saturday 28 November 2015</p>
+          <img src="imgs/per2.jpg" alt="Machachi" width="400" height="300">
+          <p><strong>Machachi</strong></p>
+          <p>Viernes, 15 de Diciembre 2017</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">ADOPTAR</button>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="imgs/per3.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>San Francisco</strong></p>
-          <p>Sunday 29 November 2015</p>
+          <img src="imgs/per3.jpg" alt="La Tola" width="400" height="300">
+          <p><strong>La Tola</strong></p>
+          <p>Domingo, 25 de Noviembre 2017</p>
           <button class="btn" data-toggle="modal" data-target="#myModal">ADOPTAR</button>
         </div>
       </div>
@@ -83,31 +83,31 @@
           <div class="modal-body">
             <form role="form" action="insert.php" method="POST">
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span>CEDULA </label>
-                <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingresa tu ci o  numero de pasaporte">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required></span>CEDULA </label>
+                <input type="text" class="form-control" id="cedula" name="cedula" placeholder="Ingresa tu ci o  numero de pasaporte" required>
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span>NOMBRES</label>
-                <input type="text" class="form-control" id="nombres" name="nombres"placeholder="Ingresa tus nombres">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required></span>NOMBRES</label>
+                <input type="text" class="form-control" id="nombres" name="nombres"placeholder="Ingresa tus nombres" required>
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-user"></span>APELLIDOS</label>
-                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required></span>APELLIDOS</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-road"></span>DIRECCION</label>
-                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion de tu domicilio/donde vives">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required></span>DIRECCION</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion de tu domicilio/donde vives" required>
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-envelope"></span>CORREO</label>
-                <input type="text" class="form-control" id="correo" name="correo" placeholder="Ingresa correo que este activo">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required></span>CORREO</label>
+                <input type="text" class="form-control" id="correo" name="correo" placeholder="Ingresa correo que este activo" required>
               </div>
               <div class="form-group">
-                <label for="usrname"><span class="glyphicon glyphicon-phone-alt"></span>TELEFONOS</label>
-                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Celular o Convencional">
+                <label for="usrname"><span class="glyphicon glyphicon-user" required ></span>TELEFONOS</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Celular o Convencional" required>
               </div>
 
-                <button type="submit" class="btn btn-block"  >ENVIAR
+                <button type="submit" class="btn btn-block"   >ENVIAR
                 </button>
             </form>
           </div>
@@ -120,3 +120,29 @@
       </div>
     </div>
   </div>
+<script>
+  function insertData() {
+  var cedula=$("#cedula").val();
+  var nombres=$("#nombres").val();
+  var apellidos=$("#apellidos").val();
+  var direccion=$("#direccion").val();
+  var correo=$("#correo").val();
+  var telefono=$("#telefono").val();
+
+      $.ajax({
+          type: "POST",
+          url: "insert.php",
+          data: {cedula:cedula,nombres:nombres,apellidos:apellidos,direccion:direccion,correo:correo,telefono:telefono},
+          dataType: "JSON",
+          success: function(data) {
+           $("#message").html(data);
+          $("p").addClass("alert alert-success");
+          },
+          error: function(err) {
+          alert(err);
+          }
+      });
+
+  }
+
+</script>
