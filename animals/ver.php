@@ -32,24 +32,20 @@
         <div class="modal-body">
 <form role="form" method="post" id="agregar">
 	<div class="form-group">
-		<label for="id_animal"><b>Codigo</b> <small>(ejemplo:12345)</small></label>
-		<input name="id_animal" type="text" class="form-control" placeholder="Pequeño..."required>
-	</div>
-	<div class="form-group">
 		<label for="nombre"><b>Nombre</b> <small>(ejemplo:Firulais)</small></label>
-		<input name="nombre" type="text" class="form-control" placeholder="Mi nombre es Tyson..." required>
+		<input name="nombre" id="nombre" type="text" class="form-control" placeholder="Mi nombre es Tyson..." required>
 	</div>
 	<div class="form-group">
 		<label for="peso"><b>Peso</b> <small>(ejemplo:Kilos)</small></label>
-		<input name="peso" type="text" class="form-control" placeholder="15.2 kg"required>
+		<input name="peso"  id="peso"type="text" class="form-control" placeholder="15.2 kg"required>
 	</div>
 	<div class="form-group">
 		<label for="edad"><b>Edad</b> <small>(edad de la mascota)</small></label>
-		<input name="edad" type="text" class="form-control" placeholder="8 años.."required>
+		<input name="edad" id="edad"type="text" class="form-control" placeholder="8 años.."required>
 	</div>
 	<div class="form-group">
 		<label for="descripcion" ><b>Descripción</b> <small>(ejemplo:es jugueton)</small></label>
-		<input name="descripcion" type="text" class="form-control" placeholder="Travieso..."required>
+		<input name="descripcion" id="descripcion" type="text" class="form-control" placeholder="Travieso..."required>
 
 </div>
 

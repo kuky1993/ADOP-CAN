@@ -18,10 +18,6 @@ while ($r=$query->fetch_object()){
 
 <form role="form" id="actualizar" >
   <div class="form-group">
-    <label for="id_animal">Codigo</label>
-    <input type="text" class="form-control" value="<?php echo $Animal->id_animal; ?>" name="id_animal" required>
-  </div>
-  <div class="form-group">
     <label for="nombre">Nombre</label>
     <input type="text" class="form-control" value="<?php echo $Animal->nombre; ?>" name="nombre" required>
   </div>

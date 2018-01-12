@@ -10,7 +10,6 @@ $query = $con->query($sql1);
 <?php if($query->num_rows>0):?>
 <table class="table table-bordered table-hover">
 <thead>
-	<th>Codigo</th>
 	<th>Nombre</th>
 	<th>Peso</th>
 	<th>Edad</th>
@@ -19,7 +18,6 @@ $query = $con->query($sql1);
 </thead>
 <?php while ($r=$query->fetch_array()):?>
 <tr>
-	<td><?php echo $r["id_animal"]; ?></td>
 	<td><?php echo $r["nombre"]; ?></td>
 	<td><?php echo $r["peso"]; ?></td>
 	<td><?php echo $r["edad"]; ?></td>
